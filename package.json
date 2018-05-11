@@ -1,0 +1,22 @@
+{
+  "name": "framework-css---teccss",
+  "version": "1.0.0",
+  "description": "Framework css da TecGenius",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Edmundo92/Framework-CSS---TecCss.git"
+  },
+  "author": "Edmundo NAscimento | Euclides Amaro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Edmundo92/Framework-CSS---TecCss/issues"
+  },
+  "homepage": "https://github.com/Edmundo92/Framework-CSS---TecCss#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.0"
+  }
+}

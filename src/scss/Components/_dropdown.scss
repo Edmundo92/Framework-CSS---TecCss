@@ -1,0 +1,21 @@
+.dropdown__menu {
+    background-clip: padding-box;
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    border-bottom-left-radius: 2px;
+    border-top: 1px solid #e8e9eb;
+    box-shadow: 0 4px 16px rgba(20,23,28,.25);
+    color: #505763;
+    display: none;
+    font-size: 13px;
+    left: 0;
+    list-style: none;
+    margin: 0;
+    position: absolute;
+    right: -1px;
+    text-align: left;
+    top: 100%;
+    width: 240px;
+    z-index: 1000;
+}

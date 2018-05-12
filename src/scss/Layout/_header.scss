@@ -1,0 +1,162 @@
+@import '../Mixins/mixin-header';
+
+//colors
+$c_gray: #686F5F;
+
+$height-header : 60px;
+
+.header{
+    height: $height-header;
+    background: steelblue;
+    padding: 10px 15px;
+    box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
+    display: block;
+    position: relative;
+    z-index: 1010;
+}
+.h-box{
+    //background: skyblue;
+    position: relative;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.h_box-item{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.h_right i, 
+.b_btn-nav{
+    margin-right: 15px;
+}
+
+.menu_hanburger{
+    width: 25px;
+    height: 23px;
+    position: relative;
+    display: inline-block;
+    border-top: 2px solid orangered; 
+    margin-right: 20px;
+}
+.menu_hanburger::before, .menu_hanburger::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border: 1px solid orangered;
+}
+.menu_hanburger::before{
+    top: 8px;
+}
+.menu_hanburger::after{
+    top: 17px;
+}
+
+.user-avatar{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border: 1px solid $c_gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-avatar::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: orangered;
+    border-radius: 50%;
+    top: -1px;
+    right: 0;
+}
+.initial_avatar{
+    font-weight: 150;
+    color: $c_gray;
+}
+
+.box_search{
+    height: $height-header;
+    background-color: steelblue;
+}
+
+//display
+.fa-bell, 
+.fa-heart, 
+.b_user-avatar{
+    display: none;
+}
+
+
+.b_btn-nav:hover{
+    border: 1px solid $c_gray;
+    padding: 10px;
+    border-radius: 3px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 12px 15px;
+    white-space: nowrap;
+}
+
+.form_search{
+    width: 100%;
+    display: none;
+}
+.b_btn-nav{
+    display: none;
+}
+
+@media (min-width: 576px){
+
+}
+
+@media (min-width: 768px){
+    .menu_hanburger,
+    .fa-search{
+        display: none;
+    }
+    @include headerBox(720px);
+   
+    .b_user-avatar{
+        display: inline-block;
+    }
+    .logo{
+        width: 110px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .form_search{
+        padding: 10px;
+        height: 40px;
+        display: block;
+        background-color: wheat;
+        background-color: #f2f3f5;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+    }
+    input{
+        background-color: #f2f3f5;
+        border: 1px solid transparent;
+        outline: none;
+    }
+}
+
+@media (min-width: 992px){
+    @include headerBox(960px);
+}
+
+@media (min-width: 1200px){
+    @include headerBox(1140px);
+    .fa-bell, 
+    .fa-heart{
+        display: block;
+    }
+}

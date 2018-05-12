@@ -1,0 +1,5 @@
+//mixins para as colunas
+$margin: 2;
+@mixin column($num-col) {
+    width: ((100% * $num-col) / 12);
+}

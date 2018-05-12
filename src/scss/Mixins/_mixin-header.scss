@@ -1,0 +1,6 @@
+@mixin headerBox($width){
+    .h-box{
+        width: $width;
+        margin: 0 auto;
+    }
+}

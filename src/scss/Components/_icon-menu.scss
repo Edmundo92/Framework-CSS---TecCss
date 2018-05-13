@@ -1,0 +1,35 @@
+.box-icon-menu {
+    display: inline;
+    width: 23px;
+    height: 20px;
+}
+
+.icon-menu {
+    position: relative;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+}
+
+.icon-menu:before,
+.icon-menu:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+}
+
+.icon-menu:before {
+    top: 7px;
+}
+
+.icon-menu:after {
+    top: 14px;
+}
+
+.icon-menu:after, 
+.icon-menu:before, 
+.icon-menu{
+    border-radius: 30%;
+}

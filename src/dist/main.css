@@ -83,7 +83,15 @@ a {
   position: relative;
   height: 40px;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
+
+.h_box02 {
+  position: relative;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
 
 .h_box-item {
   height: 40px;
@@ -164,7 +172,31 @@ a {
 .b_btn-nav {
   display: none; }
 
+.action-search span,
+.action-user,
+.b-separar,
+.action-close {
+  display: none;
+  color: #fff; }
+
+.action-search i,
+.action-user i {
+  color: #fff;
+  margin-right: 3px; }
+
+.b-separar {
+  width: 1px;
+  background: white;
+  margin: 0 15px;
+  height: 20px; }
+
 @media (min-width: 768px) {
+  .action-search span,
+  .action-search i,
+  .action-user,
+  .b-separar {
+    display: inline; }
+
   .menu_hanburger,
   .fa-search {
     display: none; }
@@ -179,10 +211,11 @@ a {
   .logo {
     width: 110px;
     position: absolute;
-    top: 0;
+    top: 6px;
     left: 0;
     right: 0;
-    bottom: 0; }
+    bottom: 0;
+    font-size: 1.2em; }
 
   .form_search {
     padding: 10px;
@@ -197,11 +230,22 @@ a {
   input {
     background-color: #f2f3f5;
     border: 1px solid transparent;
-    outline: none; } }
+    outline: none; }
+
+  .h_center {
+    width: 350px;
+    margin-left: calc(50% - 250px); } }
 @media (min-width: 992px) {
   .h-box {
     width: 960px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  .b_btn-nav {
+    display: block; }
+
+  .h_center {
+    width: 450px;
+    margin-left: calc(50% - 350px); } }
 @media (min-width: 1200px) {
   .h-box {
     width: 1140px;
@@ -210,6 +254,36 @@ a {
   .fa-bell,
   .fa-heart {
     display: block; } }
+.box-icon-menu {
+  display: inline;
+  width: 23px;
+  height: 20px; }
+
+.icon-menu {
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background-color: black; }
+
+.icon-menu:before,
+.icon-menu:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: black; }
+
+.icon-menu:before {
+  top: 7px; }
+
+.icon-menu:after {
+  top: 14px; }
+
+.icon-menu:after,
+.icon-menu:before,
+.icon-menu {
+  border-radius: 30%; }
+
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
 

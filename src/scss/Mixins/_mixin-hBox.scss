@@ -1,0 +1,7 @@
+@mixin hBox($space){
+    position: relative;
+    height: 40px;
+    display: flex;
+    justify-content: $space;
+    align-items: center;
+}
